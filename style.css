@@ -1,0 +1,280 @@
+* {
+    font-family: Poppins;
+    line-height: 2;
+}
+
+body {
+    background-color: rgb(253, 94, 80);
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #fff;
+    height: 26em;
+    border-radius: 0 0 70% 70%;
+}
+
+#shoe1 {
+    width: 400px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+    top: 35%;
+    position: relative;
+}
+
+#nike {
+    position: absolute;
+    z-index: 2;
+    margin: 50px 0 20px 150px;
+    width: 175px;
+}
+
+header li {
+    list-style-type: none;
+    list-style: none;
+    display: inline;
+    background-color: rgb(253, 84, 84);
+    padding: 10px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav {
+    float: right;
+    margin: 80px 150px 0 0;
+}
+
+#search input{
+    font-size: 20px;
+    border-radius: 30px;
+    background-color: rgb(253, 84, 84);
+    padding: 10px 25px;
+    width: 100%;
+    color: #fff;
+}
+#search {
+    width: 350px;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, 0);
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #fff;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+
+button, input[type=button] {
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+}
+
+#shoe2 img{
+    margin-right: 50px;
+    width: 400px;
+    height: 400px;
+    border-radius: 20px;
+}
+
+#shoe2 {
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 1.5;
+    display: flex;
+    color: #000;
+    text-align: left;
+}
+
+#shoe2 button {
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: rgb(253, 84, 84);
+}
+
+#mimgs, #fimgs {
+    display: flex;
+}
+
+#men, #women {
+    margin-top: 3em;
+    display: flex;
+}
+
+#men #mcase, #women #wcase {
+    color: #fff;
+    border-radius: 10px;
+    min-width: 250px;
+    height: 310px;
+    margin: 20px;
+    background-image: url("https://i.pinimg.com/originals/8c/63/3d/8c633d37d4683639e7563ddba1ea5aa7.jpg");
+    margin-top: 3em;
+}
+
+#women #wcase {
+    background-image: url("https://i.pinimg.com/originals/bc/d6/5e/bcd65e143af3442c7dd11bbec69c29cb.jpg");
+    background-size:330px;
+    background-position: bottom;
+}
+
+#men img, #women img {
+    transition: 0.2s;
+    margin: 3em 1em;
+    width: 250px;
+    border-radius: 10px;
+    height: 310px;
+}
+
+.check {
+    position: absolute;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 370px;
+    border-radius: 10px;
+    background-color: #fff;
+    right: 20px;
+    
+}
+
+#mleft, #mright, #wright, #wleft {
+    position: absolute;
+    cursor: pointer;
+    font-size: 40px;
+    background-color: rgb(253, 84, 84);
+    padding: 10px;
+    color: #fff;
+    right: 0;
+    margin-top: 3.2em;
+    border-radius: 10px;
+}
+
+#mleft, #wleft {
+    visibility: hidden;
+    left: 300px;
+}
+
+footer {
+    margin-top: 3em;
+    color: #000;
+    letter-spacing: 1px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 30% 30% 0 0;
+    padding: 40px 0 10px 0;
+}
+
+footer * {
+    line-height: 1.2;
+}
+
+@media only screen and (max-width:840px){
+    #nike{
+        margin-left: 30px;
+        top: 0%;
+    }
+    header nav {
+        margin-right: 30px;
+    }
+    #shoe2 {
+        text-align: center;
+        flex-direction: column;
+    }
+    #shoe2 img {
+        margin: auto;
+    }
+    #mcase, #wcase {
+        display: none;
+    }
+    #mleft, #wleft{
+        left: 0;
+    }
+    #mright, #wright {
+        right: 0;
+    }
+    .check {
+        left: 50%;
+        right: 50%;
+        transform: translate(-50%, 0);
+        width: 200px;
+        text-align: center;
+    }
+
+}
+
+@media only screen and (max-width:718px){
+    #shoe1 {
+        top: 30%;
+        width: 50%;
+    }
+    header {
+        height: 30em;
+    }
+    footer h3{
+        padding: 0 20px;
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width:545px){
+    header nav {
+        display: none;
+    }
+    #nike {
+        margin: 0;
+        padding: 0;
+        left: 50%;
+        right: 50%;
+        transform: translate(-45%, 20px);
+    }
+    header {
+        height: 20em;
+    }
+    #shoe1 {
+        margin-top: 30px;
+    }
+    #shoe2 img{
+        width: 350px;
+        height: 100%;
+
+    }
+}
+
+@media only screen and (max-width:460px){
+    #search {
+        width: 90%;
+    }
+    #search input {
+        width: 100%;
+    }
+    header {
+        border-radius: 0 0 50% 50%;
+    }
+    #shoe2 img{
+        width: 300px;
+        height: 100%;
+    }
+}
